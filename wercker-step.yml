@@ -1,0 +1,12 @@
+name: zip
+version: 0.1.7
+description: package your file as .zip
+kyewords:
+  - package
+properties:
+    input:
+      type: string
+      required: true
+    output:
+      type: string
+      required: true
