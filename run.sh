@@ -16,7 +16,7 @@ mkdir -p ${OUTPUT}
 for TARGET in $(find ${INPUT} -mindepth 1 -maxdepth 1 -type d); do
     ARCHIVE_NAME=$(basename ${TARGET})
     pushd ${TARGET}
-    zip ${OUTPUT}/${ARCHIVE_NAME}.zip ./*
+    zip -r ${OUTPUT}/${ARCHIVE_NAME}.zip ./*
     popd
 done
 
